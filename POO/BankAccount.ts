@@ -22,7 +22,7 @@ export class BankAccount{
 
     //retirer des sous
     withdraw(somme:number): void {
-        if(this.balance > 0){
+        if(this.balance > somme){
             this.balance-=somme;
             //ajout
             let transaction = new Transaction(new Date(), somme, "retrait");
