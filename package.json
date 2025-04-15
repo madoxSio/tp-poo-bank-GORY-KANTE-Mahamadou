@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
   },
   "keywords": [],
   "author": "",
@@ -11,5 +11,11 @@
   "description": "",
   "dependencies": {
     "typescript": "5.7.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^9.24.0",
+    "eslint-plugin-security": "^3.0.1"
   }
 }
