@@ -1,17 +1,11 @@
-// eslint.config.js
-module.exports = {
-    extends: [
-      'eslint:recommended',
-      'plugin:node/recommended',
-      
-    ],
-    parserOptions: {
-      ecmaVersion: 2020,
-      sourceType: 'module',
-    },
-    env: {
-      node: true,
-      es2020: true,
-    },
-  };
-  
+import eslint from 'eslint';
+
+export default [
+  {
+    ...eslint.configs.recommended, // Utilise la configuration recommandée d'ESLint
+    ...eslint.plugins.react.configs.recommended, // Utilise la configuration recommandée pour React
+    rules: {
+      "no-unused-vars": "warn", // Ta règle personnalisée
+    }
+  }
+];
